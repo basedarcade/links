@@ -35,12 +35,6 @@
       border: 3px solid white;
       margin-top: 30px;
     }
-    .profile-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
     h1 {
       font-size: 1.5rem;
       margin: 15px 0 5px;
@@ -99,6 +93,21 @@
 	left:0;
     z-index: -1;
 }
+    .profile-section{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+        /* Hide scrollbars */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        max-width: 500px;
+    }
+    .profile-section::-webkit-scrollbar {
+        display: none; /* WebKit */
+    }
   </style>
 
   <!-- ✅ Correct Font Awesome CDN -->
@@ -110,19 +119,21 @@
    <div class="profile-section">
   <img src="based arcade.jpg"" alt="Profile Picture" class="profile-pic">
   <h1>Based Arcade</h1>
-  <p>Short description about yourself or your brand.</p>
+  <p>Welcome to BasedArcade!
+    <br>
+    We drop the hottest gaming news, leaks, and free game updates every week. From AAA titles to hidden gems — if it’s free or worth playing, you’ll hear it here first!
+</p>
 
   <!-- Link Buttons -->
-  <a href="https://your-tours-link.com" class="link-btn"><i class="fa-solid fa-calendar-days" style="margin-right:10px;"></i> Tour Dates</a>
-  <a href="https://discord.gg/yourinvite" class="link-btn"><i class="fa-brands fa-discord" style="margin-right:10px;"></i> Our Discord</a>
-  <a href="https://yourwebsite.com" class="link-btn"><i class="fa-solid fa-link" style="margin-right:10px;"></i> Website</a>
-  <a href="mailto:youremail@example.com" class="link-btn"><i class="fa-solid fa-envelope" style="margin-right:10px;"></i> Email</a>
+  <a href="links.html" class="link-btn"><i class="fa-solid fa-gamepad" style="margin-right:10px;"></i> Free Game Websites</a>
+  <a href="https://discord.gg/Vnzyd4nDmJ" class="link-btn"><i class="fa-brands fa-discord" style="margin-right:10px;"></i> Our Discord</a>
+  <a href="mailto:basedarcadestudios@gmail.com" class="link-btn"><i class="fa-solid fa-envelope" style="margin-right:10px;"></i> Email</a>
 
   <!-- Social Icons -->
   <div class="socials">
-    <a href="https://instagram.com/yourhandle"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://youtube.com/yourhandle"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://facebook.com/yourpage"><i class="fa-brands fa-discord"></i></a>
+    <a href="https://www.instagram.com/basedarcade"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@Basedarcadestudios"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://discord.gg/Vnzyd4nDmJ"><i class="fa-brands fa-discord"></i></a>
   </div>
 </div>
 </body>
